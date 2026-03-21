@@ -7,20 +7,20 @@ class Ocv < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/leohenon/opencode/releases/download/v1.2.27-vim.2.5/ocv-darwin-arm64.zip"
-      sha256 "b36283ee6b265843c3c73d89f06e4a630b23194e1080370eb23f22acd46d8e5c"
+      sha256 "2cce25ce5a48ed30788d81c744f146ac77c7969e3358113dad4d128a8e92c41d"
     else
       url "https://github.com/leohenon/opencode/releases/download/v1.2.27-vim.2.5/ocv-darwin-x64.zip"
-      sha256 "5d4c34382087d686da26e917fd3ecff777f91c07c0c85d73f56926d02d399333"
+      sha256 "191d5e6d575220737e00960176d63c98d82878c7f4f277f752e6fba7644e9b61"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/leohenon/opencode/releases/download/v1.2.27-vim.2.5/ocv-linux-arm64.tar.gz"
-      sha256 "e1fa823fc90d2d5d46506bfd48ae96f7759960e0f9d06be0bc85df12f953bb5f"
+      sha256 "0e9e97b8e7c9d8b7b14533a1d90e744d7cab9081f58915abb1aebd16ae4908d6"
     else
       url "https://github.com/leohenon/opencode/releases/download/v1.2.27-vim.2.5/ocv-linux-x64.tar.gz"
-      sha256 "094e37595efd60931423fbb6f137a6d2974f8ed3a78b25e51676e1640f1c4110"
+      sha256 "2b868938bc5c58e69957da60557d04dcedc74e45c9096ba4fa4b1e6693a00b91"
     end
   end
 
