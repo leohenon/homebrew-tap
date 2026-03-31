@@ -7,20 +7,20 @@ class Ocv < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/leohenon/opencode/releases/download/v1.3.9-ocv.3.0/ocv-darwin-arm64.zip"
-      sha256 "04478a8f69b0291954e6e183692b4837c088ab8b78393f86de826c117ddd9e6b"
+      sha256 "7edcf2151fbc209326969194b75a357e38c5cf9c0b3ef033fd13a063567a14bd"
     else
       url "https://github.com/leohenon/opencode/releases/download/v1.3.9-ocv.3.0/ocv-darwin-x64.zip"
-      sha256 "317531e02164b23f69e3573b8b16b809100a5b1733e123b2c47bc7b737d28f0d"
+      sha256 "ec8b855239f489596f250195b11ecd1512d3cd18252e88fade00f0a97eb18637"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/leohenon/opencode/releases/download/v1.3.9-ocv.3.0/ocv-linux-arm64.tar.gz"
-      sha256 "6a586e692aaefd426fa2573e4b6f7e6e8c6340417e4ee3bf566972a18c1771b5"
+      sha256 "80f814716e56041b824088581111fa46e266a6be21bcd6f3f1c5f1162a03524b"
     else
       url "https://github.com/leohenon/opencode/releases/download/v1.3.9-ocv.3.0/ocv-linux-x64.tar.gz"
-      sha256 "f400703ee371db765b4baec6871ed25f9073316bdcf4ce7e0b0678703294b9e3"
+      sha256 "a761957c9aeba3690a0d2d21a00c823c1dceb3986bdf7827a9e55afb27968c94"
     end
   end
 
