@@ -1,26 +1,26 @@
 class Ocv < Formula
   desc "OpenCode with Vim keybindings - AI coding assistant for the terminal"
   homepage "https://github.com/leohenon/opencode-vim"
-  version "1.14.48-ocv.3.49"
+  version "1.14.48-ocv.3.50"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/leohenon/opencode-vim/releases/download/v1.14.48-ocv.3.49/ocv-darwin-arm64.zip"
-      sha256 "9226f77081f982398a5a8d813c35f62e8475701a0cb1d0e16aa79a834098ced6"
+      url "https://github.com/leohenon/opencode-vim/releases/download/v1.14.48-ocv.3.50/ocv-darwin-arm64.zip"
+      sha256 "1e3b31ea43bfcd83c344acd06772bc81d4a7b5fb3446986ff79210ec9749666f"
     else
-      url "https://github.com/leohenon/opencode-vim/releases/download/v1.14.48-ocv.3.49/ocv-darwin-x64.zip"
-      sha256 "8b8fa0a7ac47c869e72845bc69827116b8556616bf76c824e4c6c8aadabc6613"
+      url "https://github.com/leohenon/opencode-vim/releases/download/v1.14.48-ocv.3.50/ocv-darwin-x64.zip"
+      sha256 "00848cbccd7532a10d4e79ec6bfb8b8a9b7b78a8263c8ecd1fa244d2110b1c0f"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/leohenon/opencode-vim/releases/download/v1.14.48-ocv.3.49/ocv-linux-arm64.tar.gz"
-      sha256 "6f888f2a7ec01ef15990917efb5f5549099c79f1c1b8b0a5ba2bc37ce952665f"
+      url "https://github.com/leohenon/opencode-vim/releases/download/v1.14.48-ocv.3.50/ocv-linux-arm64.tar.gz"
+      sha256 "2f5ac34ff589056e80bf12e83f2e7fd8051cf362045a1af43e4ac012b2bb3928"
     else
-      url "https://github.com/leohenon/opencode-vim/releases/download/v1.14.48-ocv.3.49/ocv-linux-x64.tar.gz"
-      sha256 "48e401794431d496cbab3737cda932120bcf4dd6cf3d8f1023af8f1335068aad"
+      url "https://github.com/leohenon/opencode-vim/releases/download/v1.14.48-ocv.3.50/ocv-linux-x64.tar.gz"
+      sha256 "15669e931dc3f5c759eeae6fa6038719d9510cbd81c1a0725b783887f0467216"
     end
   end
 
