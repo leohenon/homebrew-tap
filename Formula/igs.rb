@@ -5,21 +5,21 @@
 class Igs < Formula
   desc "Minimal interactive git status"
   homepage "https://github.com/leohenon/interactive-git-status"
-  version "0.1.2"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/leohenon/interactive-git-status/releases/download/v0.1.2/igs_darwin_amd64.tar.gz"
-      sha256 "6496b7c5b8f1f5caa1e4cabc4ac5f90ffb5d73ca4a7d7b41340a2beba45543ca"
+      url "https://github.com/leohenon/interactive-git-status/releases/download/v0.2.0/igs_darwin_amd64.tar.gz"
+      sha256 "5c52c0d6259fb133bd412c41bb7f1f3f4512303c7ccb0f2e171a310b2fb3efb6"
 
       define_method(:install) do
         bin.install "igs"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/leohenon/interactive-git-status/releases/download/v0.1.2/igs_darwin_arm64.tar.gz"
-      sha256 "0fa6bb8ff8e9d2dbc19ec7305d781d50ae7e49ae0c7087c7eac44578a09a08ce"
+      url "https://github.com/leohenon/interactive-git-status/releases/download/v0.2.0/igs_darwin_arm64.tar.gz"
+      sha256 "7db96006eaaa8306cacfb254cdf42b33ea8655c1a36ac597cf415b615e9113cd"
 
       define_method(:install) do
         bin.install "igs"
@@ -29,15 +29,15 @@ class Igs < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/leohenon/interactive-git-status/releases/download/v0.1.2/igs_linux_amd64.tar.gz"
-      sha256 "5c704dd461aaf0eed18c033b3dc35706ff14ae28518a4f2bc5739f37dd6b91dd"
+      url "https://github.com/leohenon/interactive-git-status/releases/download/v0.2.0/igs_linux_amd64.tar.gz"
+      sha256 "0cf4cd79bf6613bf19b01de42a312a2348985659d99417c9191735c8e549c555"
       define_method(:install) do
         bin.install "igs"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/leohenon/interactive-git-status/releases/download/v0.1.2/igs_linux_arm64.tar.gz"
-      sha256 "69b766586ad4f4bce5ad5ac0051a2e7e48fe2520a872697d0bb77f1324e9b261"
+      url "https://github.com/leohenon/interactive-git-status/releases/download/v0.2.0/igs_linux_arm64.tar.gz"
+      sha256 "8b54ef038d678089daf296811c2a6fb788641ef9679eb1295851a2f1fd002267"
       define_method(:install) do
         bin.install "igs"
       end
