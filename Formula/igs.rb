@@ -11,7 +11,7 @@ class Igs < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/leohenon/interactive-git-status/releases/download/v0.2.1/igs_darwin_amd64.tar.gz"
-      sha256 "16960e111d79d3d1188b1cec6eb4f14d1531443c2806f853ec1291fa4c61a513"
+      sha256 "5a8601d4a47ce7e6ed403cb966cf5029f3190206c3d24a30515160a631e16913"
 
       define_method(:install) do
         bin.install "igs"
@@ -19,7 +19,7 @@ class Igs < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/leohenon/interactive-git-status/releases/download/v0.2.1/igs_darwin_arm64.tar.gz"
-      sha256 "c6986e1d5583d92dcc0d0daddaa219ddb705e97881d84ec12694be7b8ef48d69"
+      sha256 "56f4ed756ed4d31442cc064035201ed0e48224b63ffd47c1c774d8d4af688072"
 
       define_method(:install) do
         bin.install "igs"
@@ -30,14 +30,14 @@ class Igs < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/leohenon/interactive-git-status/releases/download/v0.2.1/igs_linux_amd64.tar.gz"
-      sha256 "74ba4ddf2fa1ca17d81f96d81a8a619a88cb2b401cebffadeb45bbfeff0a2e7c"
+      sha256 "731cf9d5b5b5ca567194033f6ad7016a87c024c491610c2458f23a798c9470b3"
       define_method(:install) do
         bin.install "igs"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/leohenon/interactive-git-status/releases/download/v0.2.1/igs_linux_arm64.tar.gz"
-      sha256 "24ea4b0fe0c65b53b71163e32ca34dbbf6f4ad405f130baaa075dcb35b8a79f2"
+      sha256 "3029e3d2647eedad826ef55fd62e61a53eb4318079a35fa7aee55bea84470fec"
       define_method(:install) do
         bin.install "igs"
       end
