@@ -1,28 +1,28 @@
 class Opengh < Formula
   desc "Familiar terminal interface for GitHub"
   homepage "https://github.com/leohenon/opengh"
-  version "0.0.0-beta.4"
+  version "0.0.0"
   license "MIT"
 
   depends_on "gh"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/leohenon/opengh/releases/download/v0.0.0-beta.4/opengh-darwin-arm64.tar.gz"
-      sha256 "3a9d8c5e7ac6e6831f1db5c0847798d02fcb7dfa9425c2108dcd02c2068bfdc2"
+      url "https://github.com/leohenon/opengh/releases/download/v0.0.0/opengh-darwin-arm64.tar.gz"
+      sha256 "72cea1fa94d59c505c918a6cdfb935e17b2ced96cdc9ee9dcd5d2b2529935ace"
     else
-      url "https://github.com/leohenon/opengh/releases/download/v0.0.0-beta.4/opengh-darwin-x64.tar.gz"
-      sha256 "9a29fec30ddb68775ed101b8a82f2f44ac8cb6921fd622dfcdc6d1b13f55b695"
+      url "https://github.com/leohenon/opengh/releases/download/v0.0.0/opengh-darwin-x64.tar.gz"
+      sha256 "796ccef2ecd17938ae47e92f492521dd6640e62116511987b6768f238c6e5983"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/leohenon/opengh/releases/download/v0.0.0-beta.4/opengh-linux-arm64.tar.gz"
-      sha256 "39fcecf85c4a7b0c473c6b4d33d0953bcab82a6a49f547e3322ff14c4986e279"
+      url "https://github.com/leohenon/opengh/releases/download/v0.0.0/opengh-linux-arm64.tar.gz"
+      sha256 "748479063ea4cafda75071e1d44da22ffa01960b81704504ac59c8d4b7237df4"
     else
-      url "https://github.com/leohenon/opengh/releases/download/v0.0.0-beta.4/opengh-linux-x64.tar.gz"
-      sha256 "446106592eda7bc2dcc040061c8addaae200111143fb5b01d0644a291aed1a6e"
+      url "https://github.com/leohenon/opengh/releases/download/v0.0.0/opengh-linux-x64.tar.gz"
+      sha256 "a320668fa63e3c39e287b59f8e4291182799d78cfe79b24f2d05f17b8508e5cd"
     end
   end
 
